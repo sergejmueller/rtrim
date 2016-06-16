@@ -1,7 +1,7 @@
 rtrim
 ============
 
-`rtrim` Node.js module returns a string with whitespace (or other characters) stripped from the end of a string. Without dependencies and library bloat.
+`rtrim` [Node.js module](https://www.npmjs.com/package/rtrim) returns a string with whitespace (or other characters) stripped from the end of a string. Without dependencies and library bloat.
 
 
 [![Dependency Status](https://david-dm.org/sergejmueller/rtrim.svg)](https://david-dm.org/sergejmueller/rtrim)
