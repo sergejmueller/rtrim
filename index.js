@@ -20,7 +20,7 @@ module.exports = function ( str, chars ) {
     }
 
     // Remove whitespace if chars arg is empty
-    if ( typeof chars === 'undefined' ) {
+    if ( ! chars ) {
         return str.replace( /\s+$/, '' );
     }
 
@@ -28,8 +28,8 @@ module.exports = function ( str, chars ) {
     chars = chars.toString();
 
     // Set vars
-    var letters = str.split('');
-    var i = letters.length - 1;
+    var letters = str.split(''),
+        i = letters.length - 1;
 
     // Loop letters
     for ( i; i >= 0; i --) {

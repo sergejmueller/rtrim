@@ -10,7 +10,7 @@ var rtrim = require('..');
 
 console.log(
     rtrim(
-        '     Hello     '
+        '    Hello    '
     ) + ' World'
 );
 
@@ -23,12 +23,12 @@ console.log(
 
 console.log(
     rtrim(
-        'Hello World ...',
+        '... Hello World ...',
         ' .'
     )
 );
 
-// Hello World
+// ... Hello World
 
 
 /**

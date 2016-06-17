@@ -26,9 +26,9 @@ describe( 'Strip characters from the end of a string', function() {
     it( 'Strip whitespace', function() {
 
         expect(
-            rtrim( 'Hello World     ' )
+            rtrim( '    Hello World    ' )
         ).to.equal(
-            'Hello World'
+            '    Hello World'
         );
 
     } );

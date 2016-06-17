@@ -20,7 +20,18 @@ npm install rtrim
 Usage
 -----
 
-Without the second parameter, `rtrim()` will strip whitespaces (spaces, tabs and new lines).
+```javascript
+rtrim ( str [, chars ] )
+```
+
+`str` → The input string<br>
+`chars` → Characters that you want to be stripped
+
+Without the second parameter, `ltrim` will strip whitespaces (spaces, tabs and new lines).
+
+
+Examples
+-----
 
 ```javascript
 var rtrim = require('rtrim');
@@ -30,7 +41,7 @@ var rtrim = require('rtrim');
  * Strip whitespace from the end of a string
  */
 
-rtrim('     Hello     ' ) + ' World' //      Hello World
+rtrim( '    Hello    ' ) + ' World' //     Hello World
 
 
 /**
@@ -38,7 +49,7 @@ rtrim('     Hello     ' ) + ' World' //      Hello World
  * e.g. space & dot
  */
 
-rtrim( 'Hello World ...', ' .' ); // Hello World
+rtrim( '... Hello World ...', ' .' ); // ... Hello World
 
 
 /**
