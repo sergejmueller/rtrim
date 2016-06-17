@@ -27,7 +27,7 @@ rtrim ( str [, chars ] )
 `str` → The input string<br>
 `chars` → Characters that you want to be stripped
 
-Without the second parameter, `ltrim` will strip whitespaces (spaces, tabs and new lines).
+Without the second parameter, `rtrim` will strip whitespaces (spaces, tabs and new lines).
 
 
 Examples
@@ -37,31 +37,15 @@ Examples
 var rtrim = require('rtrim');
 
 
-/**
- * Strip whitespace from the end of a string
- */
+/* Strip whitespace from the end of a string */
+rtrim( '    Hello    ' ) + ' World' // →    Hello World
 
-rtrim( '    Hello    ' ) + ' World' //     Hello World
+/* Strip multiple special chars from the end of a string */
+rtrim( '... Hello World ...', ' .' ); // →... Hello World
 
+/* Strip multiple chars from the end of a string */
+rtrim( 'Hello World', 'Hdle' ); // →Hello Wor
 
-/**
- * Strip multiple special chars from the end of a string
- * e.g. space & dot
- */
-
-rtrim( '... Hello World ...', ' .' ); // ... Hello World
-
-
-/**
- * Strip multiple chars from the end of a string
- */
-
-rtrim( 'Hello World', 'Hdle' ); // Hello Wor
-
-
-/**
- * Strip trailing slash from the end of a string
- */
-
-rtrim( 'https://goo.gl/', '/' ); // https://goo.gl
+/* Strip trailing slash from the end of a string */
+rtrim( 'https://goo.gl/', '/' ); // →https://goo.gl
 ```
