@@ -7,6 +7,7 @@ rtrim
 [![Dependency Status](https://david-dm.org/sergejmueller/rtrim.svg)](https://david-dm.org/sergejmueller/rtrim)
 [![Code Climate](https://codeclimate.com/github/sergejmueller/rtrim/badges/gpa.svg)](https://codeclimate.com/github/sergejmueller/rtrim)
 [![Build Status](https://travis-ci.org/sergejmueller/rtrim.svg?branch=master)](https://travis-ci.org/sergejmueller/rtrim)
+[![Known Vulnerabilities](https://snyk.io/test/github/sergejmueller/rtrim/badge.svg)](https://snyk.io/test/github/sergejmueller/rtrim)
 
 
 Install
