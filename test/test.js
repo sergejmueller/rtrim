@@ -1,10 +1,10 @@
 "use strict";
 
 
-var rtrim = require('..'),
-    range = require('array-range'),
-    shuffle = require('shuffle-array'),
-    expect = require('chai').expect;
+var rtrim = require( '..' ),
+    range = require( 'array-range' ),
+    shuffle = require( 'shuffle-array' ),
+    expect = require( 'chai' ).expect;
 
 
 describe( 'Strip characters from the end of a string', function() {
@@ -67,6 +67,6 @@ var shuffledSpecialChars = function() {
         chars.push( String.fromCharCode( _ ) );
     } );
 
-    return shuffle( chars ).join('');
+    return shuffle( chars ).join( '' );
 
 }

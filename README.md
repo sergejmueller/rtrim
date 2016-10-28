@@ -1,7 +1,7 @@
 rtrim
 ============
 
-`rtrim` [Node.js module](https://www.npmjs.com/package/rtrim) returns a string with whitespace (or other characters) stripped from the end of a string. Without dependencies and library bloat.
+`rtrim` Node.js module returns a string with whitespace (or other characters) stripped from the end of a string. Without dependencies and library bloat.
 
 
 [![Dependency Status](https://david-dm.org/sergejmueller/rtrim.svg)](https://david-dm.org/sergejmueller/rtrim)
@@ -13,8 +13,14 @@ rtrim
 Install
 -----
 
-```
+```bash
 npm install rtrim
+```
+
+*or*
+
+```bash
+yarn add rtrim
 ```
 
 
@@ -22,11 +28,13 @@ Usage
 -----
 
 ```javascript
-rtrim ( str [, chars ] )
+rtrim( str [, chars ] )
 ```
 
-`str` → The input string<br>
-`chars` → Characters that you want to be stripped
+Parameter | Description
+--- | ---
+`str` | The input string
+`chars` | Characters that you want to be stripped
 
 Without the second parameter, `rtrim` will strip whitespaces (spaces, tabs and new lines).
 
@@ -35,7 +43,7 @@ Examples
 -----
 
 ```javascript
-var rtrim = require('rtrim');
+var rtrim = require( 'rtrim' );
 
 
 /* Strip whitespace from the end of a string */

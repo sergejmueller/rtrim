@@ -28,13 +28,13 @@ module.exports = function ( str, chars ) {
     chars = chars.toString();
 
     // Set vars
-    var letters = str.split(''),
+    var letters = str.split( '' ),
         i = letters.length - 1;
 
     // Loop letters
-    for ( i; i >= 0; i --) {
+    for ( i; i >= 0; i -- ) {
         if ( chars.indexOf( letters[i] ) === -1 ) {
-            return str.substring(0, i + 1);
+            return str.substring( 0, i + 1 );
         }
     }
 

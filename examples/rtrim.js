@@ -1,7 +1,7 @@
 "use strict";
 
 
-var rtrim = require('..');
+var rtrim = require( '..' );
 
 
 /**
