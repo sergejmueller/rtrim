@@ -4,9 +4,8 @@ rtrim
 `rtrim` Node.js module returns a string with whitespace (or other characters) stripped from the end of a string. Without dependencies and library bloat.
 
 
-[![Dependency Status](https://david-dm.org/sergejmueller/rtrim.svg)](https://david-dm.org/sergejmueller/rtrim)
-[![Code Climate](https://codeclimate.com/github/sergejmueller/rtrim/badges/gpa.svg)](https://codeclimate.com/github/sergejmueller/rtrim)
 [![Build Status](https://travis-ci.org/sergejmueller/rtrim.svg?branch=master)](https://travis-ci.org/sergejmueller/rtrim)
+[![Code Climate](https://codeclimate.com/github/sergejmueller/rtrim/badges/gpa.svg)](https://codeclimate.com/github/sergejmueller/rtrim)
 [![Known Vulnerabilities](https://snyk.io/test/github/sergejmueller/rtrim/badge.svg)](https://snyk.io/test/github/sergejmueller/rtrim)
 
 
@@ -28,7 +27,7 @@ Usage
 -----
 
 ```javascript
-rtrim( str [, chars ] )
+rtrim(str[, chars])
 ```
 
 Parameter | Description
@@ -43,18 +42,17 @@ Examples
 -----
 
 ```javascript
-var rtrim = require( 'rtrim' );
-
+var rtrim = require('rtrim');
 
 /* Strip whitespace from the end of a string */
-rtrim( '    Hello    ' ) + ' World' // →    Hello World
+rtrim('    Hello    ') + ' World' // →    Hello World
 
 /* Strip multiple special chars from the end of a string */
-rtrim( '... Hello World ...', ' .' ); // →... Hello World
+rtrim('... Hello World ...', ' .'); // →... Hello World
 
 /* Strip multiple chars from the end of a string */
-rtrim( 'Hello World', 'Hdle' ); // →Hello Wor
+rtrim('Hello World', 'Hdle'); // →Hello Wor
 
 /* Strip trailing slash from the end of a string */
-rtrim( 'https://goo.gl/', '/' ); // →https://goo.gl
+rtrim('https://goo.gl/', '/'); // →https://goo.gl
 ```
